@@ -1,0 +1,48 @@
+@font-face {
+    font-family: font1;
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+.layout {
+    -fx-min-height: 700px;
+    -fx-min-width: 1100px;
+    -fx-padding: 50px 100px 50px 100px;
+    -fx-background-color: linear-gradient(to bottom left, #c850c0, #4158d0);
+}
+
+.box {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-max-width: 900px;
+    -fx-max-height: 600px;
+    -fx-min-width: 900px;
+    -fx-min-height: 600px;
+    -fx-padding: 20px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, black, 15, 0, 0, 0);
+}
+
+.lbl-score-board {
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 40px;
+    -fx-label-padding: 10px;
+    -fx-alignment: center;
+}
+
+.btn-box {
+    -fx-padding: 10px;
+    -fx-min-height: 50px;
+    -fx-spacing: 15px;
+}
+
+.table-box {
+    -fx-min-height: 400px;
+    -fx-min-width: 800px;
+}
+
+TableView {
+    -fx-min-width: 860px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+

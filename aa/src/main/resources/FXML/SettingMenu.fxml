@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+
+
+<Pane prefHeight="700.0" prefWidth="1100.0"
+      stylesheets="@../css/menuStyle.css,@../css/settingStyle.css"
+      xmlns="http://javafx.com/javafx/19"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="view.SettingMenuController">
+<VBox styleClass="layout">
+    <HBox styleClass="box">
+        <VBox styleClass="combo-field">
+        <VBox>
+            <Label>Difficulty:</Label>
+            <ComboBox fx:id="difficultyCombo">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Easy"/>
+                        <String fx:value="Medium"/>
+                        <String fx:value="Hard"/>
+                    </FXCollections>
+                </items>
+            </ComboBox>
+            </VBox>
+        <VBox>
+            <Label>number of balls:</Label>
+            <ComboBox fx:id="ballsNumCombo"/>
+        </VBox>
+        <VBox>
+            <Label>map:</Label>
+            <ComboBox fx:id="mapsCombo">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Map1"/>
+                        <String fx:value="Map2"/>
+                        <String fx:value="Map3"/>
+                    </FXCollections>
+                </items>
+            </ComboBox>
+        </VBox>
+            <VBox>
+                <Label>Shoot key:</Label>
+                <TextField fx:id="shootControlKey" editable="false"/>
+            </VBox>
+            <VBox>
+                <Label>Freeze key:</Label>
+                <TextField fx:id="frozenControlKey" editable="false"/>
+            </VBox>
+        </VBox>
+        <VBox styleClass="form">
+            <Label styleClass="lbl-setting">Setting!</Label>
+            <VBox alignment="center">
+                <Button onMouseClicked="#mute" fx:id="muteBtn">Mute</Button>
+                <Button onMouseClicked="#switchColor" fx:id="colorBtn">Color</Button>
+                <Button onMouseClicked="#switchLang" fx:id="langBtn">Language</Button>
+                <Button onMouseClicked="#back">Back</Button>
+            </VBox>
+        </VBox>
+    </HBox>
+</VBox>
+</Pane>

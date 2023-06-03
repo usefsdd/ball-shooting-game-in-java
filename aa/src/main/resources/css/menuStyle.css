@@ -1,0 +1,39 @@
+TextField, PasswordField {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-min-height: 60px;
+    -fx-max-width: 350px;
+    -fx-background-color: rgba(215, 215, 215, 0.84);
+    -fx-prompt-text-fill: #6b6b6b;
+    -fx-text-fill: black;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+TextField:focused,PasswordField:focused,ComboBox:focused {
+    -fx-border-color:  #4158d0;
+    -fx-border-width: 2px;
+}
+
+Button:hover {
+    -fx-background-color: #4158d0;
+}
+
+Button {
+    -fx-font-family: Phantomsans, sans-serif;
+    -fx-background-color:  #c850c0;
+    -fx-border-style: none;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-text-fill: white;
+    -fx-padding: 20px 50px;
+    -fx-text-alignment: center;
+    -fx-font-size: 10px;
+    -fx-cursor: hand;
+    -fx-background-insets: 5px;
+    -fx-min-height: 20px;
+    -fx-min-width: 175px;
+}

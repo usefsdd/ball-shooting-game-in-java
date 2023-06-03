@@ -1,0 +1,91 @@
+@font-face {
+    font-family: font1;
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+TextField, PasswordField {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-min-height: 20px;
+    -fx-max-width: 300px;
+    -fx-background-color: #FFCC70;
+    -fx-border-insets: 1px;
+    -fx-in: 20px;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, black, 20, 0, 0, 0);
+}
+
+.welcome {
+    -fx-font-family: font1;
+    -fx-font-size: 60px;
+    -fx-label-padding: 60px;
+    -fx-alignment: center;
+}
+
+.layout {
+    -fx-min-height: 100%;
+    -fx-padding: 100px;
+    -fx-background-color: rgba(186, 231, 250, 0.34);
+}
+
+.box {
+    /*-fx-background-color: linear-gradient(to bottom left, #e66465, #9198e5);*/
+    -fx-background-color: linear-gradient(to top right, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -fx-background-radius: 20px;
+    -fx-min-width: 400px;
+    -fx-min-height: 600px;
+    -fx-padding: 20px;
+    -fx-border-color: black;
+    -fx-border-image-width: 3px;
+    -fx-border-style: solid;
+    -fx-border-radius: 20px;
+    -fx-alignment: center;
+    -fx-spacing: 5px;
+    -fx-effect: dropshadow(three-pass-box, black, 15, 0, 0, 0);
+}
+
+.btns {
+    -fx-spacing: 10px;
+    -fx-min-height: 40px;
+    -fx-padding: 10px;
+}
+
+Button {
+    -fx-font-family: Phantomsans, sans-serif;
+    -fx-background-color: linear-gradient(to left, #00DDEB, #6a2594 50%, #00DDEB);
+    -fx-border-style: none;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-text-fill: white;
+    -fx-padding: 10px 25px;
+    -fx-text-alignment: center;
+    -fx-font-size: 10px;
+    -fx-cursor: hand;
+}
+
+.guest-btn {
+
+    -fx-padding: 10px 55px;
+}
+
+.btnBox {
+    -fx-padding: 20px;
+    -fx-min-height: 200px;
+    -fx-spacing: 15px;
+}
+
+.noAcc {
+    -fx-border-insets: 50px;
+    -fx-background-insets: 50px;
+    -fx-text-fill: #FFCC70;
+    -fx-underline: none;
+}
+
+.welcomeBox {
+}
+
+Pane {
+
+}

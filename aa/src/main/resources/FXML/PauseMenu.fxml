@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.PauseMenuController"
+      stylesheets="@../css/pauseStyle.css"
+      prefHeight="400.0" prefWidth="400.0">
+    <VBox styleClass="layout" alignment="center">
+        <HBox styleClass="title-box" alignment="center">
+            <Label styleClass="welcome">paused!</Label>
+        </HBox>
+        <HBox styleClass="btn-box" alignment="center">
+            <VBox alignment="center">
+                <HBox>
+                    <Button onMouseClicked="#musicPause" fx:id="musicPauseButton">Music</Button>
+                    <Button onMouseClicked="#musicTrack" fx:id="changeMusicButton">Track</Button>
+                </HBox>
+                <HBox>
+                    <Button onMouseClicked="#BackToGame" fx:id="save">Back</Button>
+                    <Button onMouseClicked="#QuitGame" fx:id="quit">Quit</Button>
+                </HBox>
+                <VBox styleClass="guide-box">
+                    <Label fx:id="shoot">Shoot: Space</Label>
+                    <Label fx:id="freeze">Freeze: Tab</Label>
+                    <Label fx:id="shoot2">Player Two Shoot: Enter</Label>
+                    <Label fx:id="move">Move: UP DOWN RIGHT LEFT</Label>
+                </VBox>
+            </VBox>
+        </HBox>
+    </VBox>
+</Pane>

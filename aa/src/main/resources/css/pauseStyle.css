@@ -1,0 +1,64 @@
+@font-face {
+    font-family: font1;
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+.layout {
+    -fx-min-width: 400px;
+    -fx-max-width: 400px;
+    -fx-min-height: 400px;
+    -fx-max-height: 400px;
+    -fx-background-image: url("../img/aaGameLowCapacity.png");
+    -fx-background-size: 400px;
+}
+
+.title-box {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+Button {
+    -fx-font-family: Phantomsans, sans-serif;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-background-color: #ffff;
+    -fx-text-fill: black;
+    -fx-border-radius: 5px;
+    -fx-padding: 20px 20px;
+    -fx-min-width: 150px;
+    -fx-text-alignment: center;
+    -fx-cursor: hand;
+    -fx-background-insets: 5px;
+    -fx-border-insets: 5px;
+    -fx-min-height: 20px;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0);
+}
+
+Button:hover {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+Label {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.guide-box {
+    -fx-alignment: center;
+    -fx-border-radius: 10px;
+}
+
+
+.guide-box:hover {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+
+.btn-box {
+    -fx-padding: 20px;
+    -fx-min-height: 200px;
+    -fx-spacing: 15px;
+    -fx-opacity: 1;
+}

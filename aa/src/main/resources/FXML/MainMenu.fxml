@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.MainMenuController"
+      stylesheets="@../css/mainStyle.css"
+      prefHeight="600.0" prefWidth="600.0">
+    <VBox styleClass="layout" alignment="center">
+        <HBox styleClass="title-box" alignment="center">
+            <Label styleClass="welcome">MAIN MENU</Label>
+        </HBox>
+        <HBox styleClass="btn-box" alignment="center">
+            <VBox alignment="center">
+                <Button onMouseClicked="#newGame">New Game</Button>
+                <Button onMouseClicked="#multiPlayer">Multi Player</Button>
+                <Button onMouseClicked="#enterProfile">Profile</Button>
+                <Button onMouseClicked="#showScoreBoard">Score Board</Button>
+                <Button onMouseClicked="#enterSetting">Setting</Button>
+                <Button onMouseClicked="#LogOut">Log Out</Button>
+            </VBox>
+        </HBox>
+    </VBox>
+</Pane>

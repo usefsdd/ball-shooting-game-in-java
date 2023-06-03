@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.LoginMenuController"
+      stylesheets="@../css/loginStyle.css"
+      prefHeight="800.0" prefWidth="600.0">
+    <VBox styleClass="layout">
+        <VBox styleClass="box">
+            <HBox styleClass="welcomeBox">
+                <Label styleClass="welcome">welcome!</Label>
+            </HBox>
+            <TextField onKeyTyped="#resetStyle" promptText="username" fx:id="username"/>
+            <PasswordField onKeyTyped="#resetStyle" promptText="password" fx:id="password"/>
+            <HBox styleClass="btnBox" alignment="center">
+                <VBox>
+                    <HBox alignment="center" styleClass="btns">
+                        <Button onMouseClicked="#submit">submit</Button>
+                        <Button onMouseClicked="#cancel">cancel</Button>
+                    </HBox>
+                    <HBox alignment="center">
+                        <Button onMouseClicked="#guest" styleClass="guest-btn">play as guest</Button>
+                    </HBox>
+                    <HBox alignment="center">
+                        <Hyperlink styleClass="noAcc" onMouseClicked="#register">I don't have account!</Hyperlink>
+                    </HBox>
+                </VBox>
+            </HBox>
+        </VBox>
+    </VBox>
+</Pane>

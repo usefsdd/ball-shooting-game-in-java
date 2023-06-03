@@ -1,0 +1,105 @@
+@font-face {
+    font-family: font1;
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+.layout {
+    -fx-min-height: 800px;
+    -fx-min-width: 1200px;
+    -fx-padding: 100px 150px 100px 150px;
+    -fx-background-color: linear-gradient(to bottom left, #c850c0, #4158d0);
+}
+
+.box {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-max-width: 900px;
+    -fx-max-height: 600px;
+    -fx-padding: 20px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, black, 15, 0, 0, 0);
+}
+
+.image-box {
+    -fx-min-width: 450px;
+    -fx-max-width: 450px;
+    -fx-padding: 175px 100px ;
+}
+
+.img {
+    -fx-background-image: url("../img/aaGame.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 250px;
+    -fx-min-width: 250px;
+    -fx-min-height: 250px;
+}
+
+.form {
+    -fx-min-width: 450px;
+    -fx-max-width: 450px;
+    -fx-padding: 10px;
+    -fx-spacing: 20px;
+    -fx-alignment: center;
+}
+
+.lbl-register {
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 60px;
+    -fx-label-padding: 40px 50px 40px 50px;
+    -fx-alignment: center;
+}
+
+/*TextField, PasswordField {*/
+/*    -fx-font-size: 15px;*/
+/*    -fx-font-weight: bold;*/
+/*    -fx-alignment: center;*/
+/*    -fx-border-radius: 50px;*/
+/*    -fx-background-radius: 50px;*/
+/*    -fx-min-height: 60px;*/
+/*    -fx-max-width: 350px;*/
+/*    -fx-background-color: rgba(215, 215, 215, 0.84);*/
+/*    -fx-prompt-text-fill: #6b6b6b;*/
+/*    -fx-text-fill: black;*/
+/*    -fx-border-insets: 5px;*/
+/*    -fx-background-insets: 5px;*/
+/*}*/
+
+.btns {
+    -fx-spacing: 10px;
+    -fx-min-height: 40px;
+    -fx-padding: 10px;
+}
+
+/*Button {*/
+/*    -fx-font-family: Phantomsans, sans-serif;*/
+/*    -fx-background-color: #57b846;*/
+/*    -fx-border-style: none;*/
+/*    -fx-border-radius: 50px;*/
+/*    -fx-background-radius: 50px;*/
+/*    -fx-text-fill: white;*/
+/*    -fx-padding: 20px 50px;*/
+/*    -fx-text-alignment: center;*/
+/*    -fx-font-size: 10px;*/
+/*    -fx-cursor: hand;*/
+/*    -fx-background-insets: 5px;*/
+/*    -fx-min-height: 20px;*/
+/*    -fx-min-width: 175px;*/
+/*}*/
+
+.guest-btn {
+    -fx-padding: 10px 55px;
+}
+
+.btnBox {
+    -fx-padding: 20px;
+    -fx-min-height: 200px;
+    -fx-spacing: 15px;
+}
+
+.noAcc {
+    -fx-border-insets: 50px;
+    -fx-background-insets: 50px;
+    -fx-text-fill: #FFCC70;
+    -fx-underline: none;
+}
+

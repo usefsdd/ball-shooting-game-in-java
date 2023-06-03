@@ -1,0 +1,96 @@
+.layout {
+    -fx-min-height: 700px;
+    -fx-min-width: 1100px;
+    -fx-padding: 50px 100px 50px 100px;
+    -fx-background-color: linear-gradient(to bottom left, #c850c0, #4158d0);
+}
+
+.box {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-max-width: 900px;
+    -fx-max-height: 600px;
+    -fx-min-width: 900px;
+    -fx-min-height: 600px;
+    -fx-padding: 20px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, black, 15, 0, 0, 0);
+}
+
+.image-box {
+    -fx-min-width: 450px;
+    -fx-max-width: 450px;
+    -fx-padding: 23px 25px;
+}
+
+.img {
+    -fx-background-radius: 60px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 120px;
+    -fx-min-width: 120px;
+    -fx-min-height: 120px;
+    -fx-max-height: 120px;
+    -fx-border-radius: 60px;
+    -fx-border-width: 5px;
+    -fx-border-color: #c850c0;
+}
+.img:hover {
+    -fx-background-size: 130px;
+    -fx-min-width: 130px;
+    -fx-min-height: 130px;
+    -fx-background-radius: 65px;
+    -fx-border-radius: 65px;
+    -fx-border-width: 5px;
+    -fx-border-color:  #4158d0;
+}
+
+.form {
+    -fx-min-width: 450px;
+    -fx-max-width: 450px;
+    -fx-padding: 10px;
+    -fx-spacing: 20px;
+    -fx-alignment: center;
+}
+
+.lbl-profile {
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 60px;
+    -fx-label-padding: 40px 50px 40px 50px;
+    -fx-alignment: center;
+}
+
+.btns {
+    -fx-spacing: 10px;
+    -fx-min-height: 40px;
+    -fx-padding: 10px;
+}
+
+.btnBox {
+    -fx-padding: 20px;
+    -fx-min-height: 200px;
+    -fx-spacing: 15px;
+}
+
+.img-row {
+    -fx-padding: 23px 25px;
+    -fx-spacing: 50px;
+}
+
+.avatar1 {
+    -fx-background-image: url('../img/avatars/aa1.png');
+}
+.avatar2 {
+    -fx-background-image: url('../img/avatars/aa2.png');
+}
+.avatar3 {
+    -fx-background-image: url('../img/avatars/aa3.png');
+}
+.avatar4 {
+    -fx-background-image: url('../img/avatars/aa4.png');
+}
+.avatar5 {
+    -fx-background-image: url('../img/avatars/aa5.png');
+}
+.avatar6 {
+    -fx-background-image: url('../img/avatars/aa6.png');
+}

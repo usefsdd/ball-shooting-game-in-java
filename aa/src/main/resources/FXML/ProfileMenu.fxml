@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Pane prefHeight="700.0" prefWidth="1100.0" stylesheets="@../css/profileStyle.css,@../css/menuStyle.css" xmlns="http://javafx.com/javafx/19"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ProfileMenuController">
+    <VBox styleClass="layout">
+        <HBox styleClass="box">
+            <VBox styleClass="image-box">
+                <HBox styleClass="img-row">
+                    <VBox styleClass="img,avatar1" fx:id="avatar1" onMouseClicked="#setAvatar1"/>
+                    <VBox styleClass="img,avatar2" fx:id="avatar2" onMouseClicked="#setAvatar2"/>
+                </HBox>
+                <HBox styleClass="img-row">
+                    <VBox styleClass="img,avatar3" fx:id="avatar3" onMouseClicked="#setAvatar3"/>
+                    <VBox styleClass="img,avatar4" fx:id="avatar4" onMouseClicked="#setAvatar4"/>
+                </HBox>
+                <HBox styleClass="img-row">
+                    <VBox styleClass="img,avatar5" fx:id="avatar5" onMouseClicked="#setAvatar5"/>
+                    <VBox styleClass="img,avatar6" fx:id="avatar6" onMouseClicked="#setAvatar6"/>
+                </HBox>
+            </VBox>
+            <VBox styleClass="form">
+                <Label styleClass="lbl-profile">Profile!</Label>
+                <VBox alignment="center">
+                    <TextField fx:id="usernameTxt" onKeyTyped="#resetStyle" promptText="username"/>
+                    <PasswordField fx:id="passwordTxt" onKeyTyped="#resetStyle" promptText="password"/>
+                    <PasswordField fx:id="passwordConfirmTxt" onKeyTyped="#resetStyle" promptText="password confirm"/>
+                    <TextField fx:id="emailTxt" onKeyTyped="#resetStyle" promptText="email"/>
+                    <HBox alignment="center" styleClass="btn-box">
+                        <VBox>
+                            <HBox alignment="center" styleClass="btn">
+                                <Button minWidth="100.0" onMouseClicked="#submit" text="submit"/>
+                                <Button minWidth="100.0" onMouseClicked="#deleteAccount" text="delete account"/>
+                            </HBox>
+                        </VBox>
+                    </HBox>
+                </VBox>
+            </VBox>
+        </HBox>
+    </VBox>
+</Pane>

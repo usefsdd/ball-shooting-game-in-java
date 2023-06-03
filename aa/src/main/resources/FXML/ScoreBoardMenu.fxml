@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="700.0" prefWidth="1100.0"
+      stylesheets="@../css/menuStyle.css,@../css/scoreBoardStyle.css"
+      xmlns="http://javafx.com/javafx/19"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="view.ScoreBoardMenuController">
+    <VBox styleClass="layout">
+        <VBox styleClass="box" alignment="center">
+            <HBox styleClass="title-box" alignment="center">
+                <Label styleClass="lbl-score-board">Score board!</Label>
+            </HBox>
+            <HBox styleClass="btn-box" alignment="center">
+                <Button onMouseClicked="#switchSort" fx:id="sortButton">Sort By: Score</Button>
+                <Button onMouseClicked="#back">back</Button>
+            </HBox>
+            <HBox styleClass="table-box" fx:id="tableBox"/>
+        </VBox>
+    </VBox>
+</Pane>
